@@ -7,6 +7,7 @@
       <div class="panel-body">
         <img class="media-object img-rounded img-responsive" src="<%= gravatar_url(@user, { size: 500 }) %>" alt="">
       </div>
+      <h4><%= link_to 'My_Okini', likes_user_path(current_user.id) %></h4> 
     </div>
     <%= render 'relationships/follow_button', user: @user %>
   </aside>
